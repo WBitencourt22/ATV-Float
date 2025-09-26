@@ -1,0 +1,199 @@
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(135, 223, 223);
+    padding: 0px;
+    text-align: center;
+    z-index: 10;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+
+}
+
+/*menu lateral*/
+.menu-lateral {
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #5ea097;
+    padding-top: 20px;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.content {
+    margin-left: 250px;
+    /* Deve ser a mesma largura do seu .sidebar */
+    padding: 20px;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-lateral li a {
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.menu-lateral li a:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* parte da galeria de fotos*/
+.galeria {
+    margin-top: 10px;
+    margin-left: 220px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.galeria img {
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+
+
+/*Descrição do site*/
+h2 {
+    margin-left: 220px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: darkcyan;
+}
+
+
+/* Estilos para o slider de imagens */
+.slider-container {
+    max-width: 900px;
+    position: relative;
+    margin: 100px auto;
+    /* Centraliza o slider na página */
+    text-align: center;
+    overflow: hidden;
+    /* Importante para não mostrar imagens fora da área */
+}
+
+/* Esconde todas as imagens por padrão */
+.slide {
+    display: none;
+}
+
+/* Transição para a imagem */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Botões de navegação */
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0px;
+}
+
+/* Posição do botão "próximo" */
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Efeito hover nos botões */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* Estilo para os indicadores (pontos) */
+.dots-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+footer {
+
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: px;
+    color: white;
+    text-align: center;
+    background-color: rgb(135, 223, 223);
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 10;
+}

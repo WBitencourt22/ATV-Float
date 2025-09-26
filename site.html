@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+    </header>
+    <!--Aqui ficara uma imagem fixada-->
+    <div class="slider-container">
+        <div class="slide fade">
+            <img src="https://picsum.photos/id/1/900/400" alt="Descrição da Imagem 1">
+        </div>
+        <div class="slide fade">
+            <img src="https://picsum.photos/id/2/900/400" alt="Descrição da Imagem 2">
+        </div>
+        <div class="slide fade">
+            <img src="https://picsum.photos/id/3/900/400" alt="Descrição da Imagem 3">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <!--Aqui vai ficar o menu lateral-->
+    <nav class="menu-lateral">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+
+    <p>Bem-vindo(a) ao Nosso Universo Visual
+
+        Acreditamos no poder de uma imagem. Aqui, cada fotografia é mais que um clique; é um fragmento de tempo
+        congelado, uma história contada sem palavras.
+
+        Nossa galeria é um convite para você desacelerar e sentir. Explore coleções que capturam a beleza da natureza, a
+        complexidade da vida urbana e a alma de momentos singulares. Se você busca uma peça de arte para transformar seu
+        espaço ou apenas inspiração para o seu dia, você a encontrará aqui.
+
+        O Que Nos Move
+
+        Por trás de cada lente, há uma paixão por revelar o que os olhos muitas vezes deixam passar. Selecionamos
+        cuidadosamente trabalhos que se destacam pela técnica, emoção e perspectiva única.
+
+        Navegue e descubra:
+
+        Momentos Efêmeros: Retratos, eventos e a poesia do cotidiano.
+
+        Paisagens Majestosas: Da calmaria do mar ao pico da montanha.
+
+        Arte Abstrata e Conceitual: Onde a cor e a forma criam novas realidades.
+        Fotografia de Rua: A vida em movimento, capturada em instantes espontâneos.</p>
+    <div class="galeria">
+        <img class="troca-automatica" src="https://picsum.photos/id/1/300/200" alt="Imagem 2">
+        <img class="troca-automatica" src="https://picsum.photos/id/1/300/200" alt="Imagem 1">
+        <img class="troca-automatica" src="https://picsum.photos/id/1/300/200" alt="Imagem 3">
+        <img class="troca-automatica" src="https://picsum.photos/id/1/300/200" alt="Imagem 4">
+        <div>
+            <img class="troca-automatica" src="https://picsum.photos/id/100/300/200" alt="Imagem 5">
+            <img class="troca-automatica" src="https://picsum.photos/id/100/300/200" alt="Imagem 6">
+            <img class="troca-automatica" src="https://picsum.photos/id/100/300/200" alt="Imagem 7">
+            <img class="troca-automatica" src="https://picsum.photos/id/100/300/200" alt="Imagem 8">
+        </div>
+    </div>
+
+
+
+</body>
+<footer>
+    <p>Meu rodapé</p>
+</footer>
+
+</html>
